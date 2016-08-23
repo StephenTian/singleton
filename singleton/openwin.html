@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>全局打开</title>
+</head>
+<body>
+  <a href="javascript:;" onclick="openwin()">登录</a>
+  </br></br></br></br></br>
+  <a href="javascript:;" onclick="openwin()">评论</a>
+  </br></br></br></br></br>
+  <a href="javascript:;" onclick="openwin()">发表</a>
+  <script src="login_win.js"></script>
+  <script type="text/javascript">
+  function openwin() {
+    var loginWin = LoginWinSingleton.getInstance();
+    loginWin.show();
+  }
+  </script>
+</body>
+</html>
